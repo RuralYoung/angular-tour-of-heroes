@@ -3,13 +3,17 @@
 h2 {
     text-align: center;
 }
-  
+
 .heroes-menu {
     padding: 0;
     margin: auto;
     max-width: 1000px;
 
-    /* flexbox */
+/* flexbox */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,7 +21,7 @@ h2 {
     align-content: flex-start;
     align-items: flex-start;
 }
-  
+
 a {
     background-color: #3f525c;
     border-radius: 2px;
@@ -37,14 +41,14 @@ a {
     flex: 0 1 auto;
     align-self: auto;
 }
-  
+
 @media (min-width: 600px) {
     a {
         width: 18%;
         box-sizing: content-box;
     }
 }
-  
+
 a:hover {
-    background-color: #000;
+    background-color: black;
 }
